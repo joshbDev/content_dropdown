@@ -1,0 +1,26 @@
+#dropdownoption{
+    width:500px;
+    height:50px;
+    background-color:#83bddd;
+    color:white;
+    font-family:sans-serif;
+    padding:15px 0px 0px 30px;
+    font-size:1.7em;
+        cursor:pointer;
+}
+.topdropdown{
+    width:500px;
+    height:50px;
+    background-color:#5589ad;
+    color:white;
+    font-family:sans-serif;
+    padding:15px 0px 0px 30px;
+    font-size:1.7em;
+        cursor:pointer;
+}
+.display{
+position:absolute;
+    top: 80px;
+    left: 0px;
+    z-index:-1
+    }
