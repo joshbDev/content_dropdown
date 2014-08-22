@@ -2,33 +2,32 @@ $('document').ready(function(){
   $("#selection").on("click", ".topdropdown", function(){
       $(".dropdownmenu").slideToggle();
   });
-    $("#selection").on("click", ".drop1", function(){
+$("#selection").on("click", ".dropoption1", function(){
     $(".dropdownmenu").slideUp();
-        var message=$('.drop1 span').text();
+        var message=$('.dropoption1 span').text();
         $(".display").fadeOut();
-        $('#drop1').delay(500).fadeIn();
+        $('#dropoption1').delay(500).fadeIn();
         $(".topdropdown span").replaceWith("<span>" + message + "</span>");
     });
-        $("#selection").on("click", ".drop2", function(){
+$("#selection").on("click", ".dropoption2", function(){
     $(".dropdownmenu").slideUp();
-            var message=$('.drop2 span').text();
-                  $(".display").fadeOut();  
-        $("#drop2").delay(500).fadeIn();
-             $(".topdropdown span").replaceWith("<span>" + message + "</span>");
+        var message=$('.dropoption2 span').text();
+        $(".display").fadeOut();  
+        $("#dropoption2").delay(500).fadeIn();
+        $(".topdropdown span").replaceWith("<span>" + message + "</span>");
     });
-    $("#selection").on("click", ".drop3", function(){
+$("#selection").on("click", ".dropoption3", function(){
     $(".dropdownmenu").slideUp();
-        var message=$('.drop3 span').text();
-                  $(".display").fadeOut();  
-        $("#drop3").delay(500).fadeIn();
-          $(".topdropdown span").replaceWith("<span>" + message + "</span>");
+        var message=$('.dropoption3 span').text();
+        $(".display").fadeOut();  
+        $("#dropoption3").delay(500).fadeIn();
+        $(".topdropdown span").replaceWith("<span>" + message + "</span>");
     });
-    $("#selection").on("click", ".drop4", function(){
+$("#selection").on("click", ".dropoption4", function(){
     $(".dropdownmenu").slideUp();
-        var message=$('.drop4 span').text();
-                  $(".display").fadeOut();  
-        $("#drop3").delay(500).fadeIn();
-          $(".topdropdown span").replaceWith("<span>" + message + "</span>");
+        var message=$('.dropoption4 span').text();
+        $(".display").fadeOut();  
+        $("#dropoption3").delay(500).fadeIn();
+        $(".topdropdown span").replaceWith("<span>" + message + "</span>");
     });
 });
-
