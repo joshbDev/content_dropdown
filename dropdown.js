@@ -1,26 +1,34 @@
-$(document).ready(function(){
+$('document').ready(function(){
   $("#selection").on("click", ".topdropdown", function(){
-      $(".menu").slideToggle();
+      $(".dropdownmenu").slideToggle();
   });
-    $("#selection").on("click", ".avvc", function(){
-    $(".menu").slideUp();
-        var message=$("<span>AV/VC Rooms</span>");
+    $("#selection").on("click", ".drop1", function(){
+    $(".dropdownmenu").slideUp();
+        var message=$('.drop1 span').text();
         $(".display").fadeOut();
-        $("#avvc").delay(500).fadeIn();
-        $(".topdropdown span").replaceWith(message);
+        $('#drop1').delay(500).fadeIn();
+        $(".topdropdown span").replaceWith("<span>" + message + "</span>");
     });
-        $("#selection").on("click", ".avcom", function(){
-    $(".menu").slideUp();
-            var message=$("<span>AV Combinable Room</span>");
+        $("#selection").on("click", ".drop2", function(){
+    $(".dropdownmenu").slideUp();
+            var message=$('.drop2 span').text();
                   $(".display").fadeOut();  
-        $("#avcom").delay(500).fadeIn();
-             $(".topdropdown span").replaceWith(message);
+        $("#drop2").delay(500).fadeIn();
+             $(".topdropdown span").replaceWith("<span>" + message + "</span>");
     });
-    $("#selection").on("click", ".av", function(){
-    $(".menu").slideUp();
-        var message=$("<span>AV Rooms</span>");
+    $("#selection").on("click", ".drop3", function(){
+    $(".dropdownmenu").slideUp();
+        var message=$('.drop3 span').text();
                   $(".display").fadeOut();  
-        $("#avroom").delay(500).fadeIn();
-          $(".topdropdown span").replaceWith(message);
+        $("#drop3").delay(500).fadeIn();
+          $(".topdropdown span").replaceWith("<span>" + message + "</span>");
+    });
+    $("#selection").on("click", ".drop4", function(){
+    $(".dropdownmenu").slideUp();
+        var message=$('.drop4 span').text();
+                  $(".display").fadeOut();  
+        $("#drop3").delay(500).fadeIn();
+          $(".topdropdown span").replaceWith("<span>" + message + "</span>");
     });
 });
+
