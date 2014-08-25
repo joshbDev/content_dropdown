@@ -24,9 +24,6 @@
 	color:white;
 }
 .display{
-position:absolute;
-    top: 80px;
-    left: 0px;
     z-index:-1
     }
 #plusoption{display:none;

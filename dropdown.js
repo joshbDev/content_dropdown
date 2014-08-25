@@ -44,4 +44,13 @@ $("#selection").on("click", ".dropoption4", function(){
   	  $("#minusoption").toggle(1);
 	  	  $(".display").zIndex(0);
     });
+	$("#selection").on("click", ".dropoptionall", function(){
+	    $(".dropdownmenu").slideUp();
+	        var message=$('.dropoptionall span').text();
+	        $(".display").fadeIn();  
+	        $(".topdropdown span").replaceWith("<span>" + message + "</span>");
+	  	  $("#plusoption").toggle(1);
+	  	  $("#minusoption").toggle(1);
+		  	  $(".display").zIndex(0);
+	    });
 });
