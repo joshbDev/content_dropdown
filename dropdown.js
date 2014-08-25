@@ -1,6 +1,8 @@
 $('document').ready(function(){
   $("#selection").on("click", ".topdropdown", function(){
       $(".dropdownmenu").slideToggle();
+	  $("#plusoption").toggle(1);
+	  $("#minusoption").toggle(1);
   });
 $("#selection").on("click", ".dropoption1", function(){
     $(".dropdownmenu").slideUp();
@@ -8,6 +10,8 @@ $("#selection").on("click", ".dropoption1", function(){
         $(".display").fadeOut();
         $('#dropoption1').delay(500).fadeIn();
         $(".topdropdown span").replaceWith("<span>" + message + "</span>");
+  	  $("#plusoption").toggle(1);
+  	  $("#minusoption").toggle(1);
     });
 $("#selection").on("click", ".dropoption2", function(){
     $(".dropdownmenu").slideUp();
@@ -15,6 +19,8 @@ $("#selection").on("click", ".dropoption2", function(){
         $(".display").fadeOut();  
         $("#dropoption2").delay(500).fadeIn();
         $(".topdropdown span").replaceWith("<span>" + message + "</span>");
+  	  $("#plusoption").toggle(1);
+  	  $("#minusoption").toggle(1);
     });
 $("#selection").on("click", ".dropoption3", function(){
     $(".dropdownmenu").slideUp();
@@ -22,6 +28,8 @@ $("#selection").on("click", ".dropoption3", function(){
         $(".display").fadeOut();  
         $("#dropoption3").delay(500).fadeIn();
         $(".topdropdown span").replaceWith("<span>" + message + "</span>");
+  	  $("#plusoption").toggle(1);
+  	  $("#minusoption").toggle(1);
     });
 $("#selection").on("click", ".dropoption4", function(){
     $(".dropdownmenu").slideUp();
@@ -29,5 +37,7 @@ $("#selection").on("click", ".dropoption4", function(){
         $(".display").fadeOut();  
         $("#dropoption3").delay(500).fadeIn();
         $(".topdropdown span").replaceWith("<span>" + message + "</span>");
+  	  $("#plusoption").toggle(1);
+  	  $("#minusoption").toggle(1);
     });
 });
