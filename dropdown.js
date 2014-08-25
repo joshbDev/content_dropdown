@@ -12,6 +12,7 @@ $("#selection").on("click", ".dropoption1", function(){
         $(".topdropdown span").replaceWith("<span>" + message + "</span>");
   	  $("#plusoption").toggle(1);
   	  $("#minusoption").toggle(1);
+	  $(".display").zIndex(0);
     });
 $("#selection").on("click", ".dropoption2", function(){
     $(".dropdownmenu").slideUp();
@@ -21,6 +22,7 @@ $("#selection").on("click", ".dropoption2", function(){
         $(".topdropdown span").replaceWith("<span>" + message + "</span>");
   	  $("#plusoption").toggle(1);
   	  $("#minusoption").toggle(1);
+	  	  $(".display").zIndex(0);
     });
 $("#selection").on("click", ".dropoption3", function(){
     $(".dropdownmenu").slideUp();
@@ -30,14 +32,16 @@ $("#selection").on("click", ".dropoption3", function(){
         $(".topdropdown span").replaceWith("<span>" + message + "</span>");
   	  $("#plusoption").toggle(1);
   	  $("#minusoption").toggle(1);
+	  	  $(".display").zIndex(0);
     });
 $("#selection").on("click", ".dropoption4", function(){
     $(".dropdownmenu").slideUp();
         var message=$('.dropoption4 span').text();
         $(".display").fadeOut();  
-        $("#dropoption3").delay(500).fadeIn();
+        $("#dropoption4").delay(500).fadeIn();
         $(".topdropdown span").replaceWith("<span>" + message + "</span>");
   	  $("#plusoption").toggle(1);
   	  $("#minusoption").toggle(1);
+	  	  $(".display").zIndex(0);
     });
 });
